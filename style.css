@@ -8,7 +8,8 @@ body {
     margin: 0;
 
 
-    background-image: https://github.com/dashcamsecphrwkrokan/SecurityWKRokan/blob/main/RinjaniMT.jpg;
+    background-image: url('RinjaniMT.jpg');
+
     background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
     background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
 
