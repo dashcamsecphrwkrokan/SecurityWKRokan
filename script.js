@@ -32,10 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {
     const countdownInterval = setInterval(updateCountdown, 1000);
     updateCountdown();  // initial call to display the countdown immediately
 });
-// Ambil elemen audio
-const audio = document.getElementById('background-music');
-
-// Putar lagu secara otomatis saat halaman dimuat
-window.addEventListener('load', (event) => {
-    audio.play();
-});
