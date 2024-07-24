@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #00F0F8FF;
     margin: 0;
 
 
@@ -31,5 +31,5 @@ body {
 
 #countdown span {
     display: inline-block;
-    width: 40px;
+    width: 60px;
 }
