@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #00F0F8FF;
+    background-color: #f0f0f0;
     margin: 0;
 
 
@@ -25,7 +25,7 @@ body {
 }
 
 #countdown {
-    font-size: 2em;
+    font-size: 6em;
     margin-top: 20px;
 }
 
