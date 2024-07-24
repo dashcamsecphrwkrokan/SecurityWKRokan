@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const minutesElement = document.getElementById('minutes');
     const secondsElement = document.getElementById('seconds');
 
+// Ambil elemen audio
+const audio = document.getElementById('background-music');
+
+// Putar lagu secara otomatis saat halaman dimuat
+window.addEventListener('load', (event) => {
+    audio.play();
+});
 
     const targetDate = new Date('August 31, 2024 23:59:59').getTime();
 
