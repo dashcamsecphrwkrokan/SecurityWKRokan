@@ -4,10 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const hoursElement = document.getElementById('hours');
     const minutesElement = document.getElementById('minutes');
     const secondsElement = document.getElementById('seconds');
-
-
-
     const targetDate = new Date('August 31, 2024 23:59:59').getTime();
+// Ambil elemen audio
+const audio = document.getElementById('background-music');
+
+// Putar lagu secara otomatis saat halaman dimuat
+document.addEventListener('DOMContentLoaded', (event) => {
+    audio.play();
+});
+
+    
 
     function updateCountdown() {
         const now = new Date().getTime();
