@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-    background-image: url('Gambar5.jpg');
+    background-image: url('Gambar4.jpg');
     background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
     background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
     background-position: center; /* Untuk memastikan gambar latar berada di tengah */
