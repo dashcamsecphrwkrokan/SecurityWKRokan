@@ -20,12 +20,19 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan untuk kedalaman yang lebih baik */
     max-width: 80%; /* Membatasi lebar maksimum untuk layar besar */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
 }
 
 #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
     font-size: 2.5em;
-    margin-top: 20px;
     font-weight: bold; /* Membuat teks lebih tebal untuk tampilan yang lebih baik */
+    margin-top: 20px;
 }
 
 #countdown span {
