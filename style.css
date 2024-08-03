@@ -6,15 +6,20 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 0; /* Pastikan tidak ada padding tambahan */
+    padding: 0;
 
     background-image: url('Gambar5.jpg');
-    background-size: cover; /* Memastikan gambar mencakup seluruh halaman */
-    background-repeat: no-repeat; /* Gambar tidak akan diulang */
-    background-position: center; /* Menempatkan gambar di tengah halaman */
-    background-attachment: fixed; /* Memastikan gambar tetap di tempat saat menggulir */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Atur ulang untuk layar kecil jika diperlukan */
+    }
+}
 .countdown-container {
     text-align: center;
     background-color: #FFFFFF7F;
