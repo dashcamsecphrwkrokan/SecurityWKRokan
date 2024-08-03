@@ -1,3 +1,7 @@
+g sudah diperbaiki:
+
+css
+Copied!
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,18 +10,51 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
-
     background-image: url('Gambar5.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
+    background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
+    background-position: center; /* Untuk memastikan gambar latar berada di tengah */
+    background-attachment: fixed; /* Agar gambar tetap di tempat saat di-scroll */
 }
 
+.countdown-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Menggunakan rgba untuk transparansi */
+    padding: 20px; /* Meningkatkan padding untuk spasi yang lebih baik */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan untuk kedalaman yang lebih baik */
+}
+
+#countdown {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#countdown span {
+    display: inline-block;
+    width: 60px;
+    padding: 10px 0; /* Menambahkan padding untuk tampilan yang lebih baik */
+    border-radius: 5px; /* Sudut melengkung untuk elemen span */
+    background-color: #fff; /* Warna latar belakang untuk keterbacaan yang lebih baik */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk elemen span */
+}
+
+/* Media Query untuk Mobile Devices */
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Atur ulang untuk layar kecil jika diperlukan */
+        background-size: auto 100vh; /* Menyesuaikan ukuran gambar latar belakang untuk layar mobile */
+    }
+
+    .countdown-container {
+        padding: 10px; /* Mengurangi padding untuk layar yang lebih kecil */
+    }
+
+    #countdown {
+        font-size: 1.5em; /* Mengurangi ukuran font untuk layar yang lebih kecil */
+    }
+
+    #countdown span {
+        width: 50px; /* Menyesuaikan lebar span untuk layar yang lebih kecil */
     }
 }
 .countdown-container {
