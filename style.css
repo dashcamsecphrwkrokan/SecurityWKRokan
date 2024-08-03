@@ -22,13 +22,14 @@ body {
     max-width: 80%; /* Membatasi lebar maksimum untuk layar besar */
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
 }
 
 #countdown {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
     font-size: 2.5em;
     font-weight: bold; /* Membuat teks lebih tebal untuk tampilan yang lebih baik */
     margin-top: 20px;
@@ -51,18 +52,15 @@ body {
     }
 
     .countdown-container {
-        flex-direction: column; /* Mengubah arah flex ke kolom untuk layar kecil */
         padding: 15px; /* Menyesuaikan padding untuk layar yang lebih kecil */
     }
 
     #countdown {
         font-size: 1.5em; /* Mengurangi ukuran font untuk layar yang lebih kecil */
-        flex-direction: row; /* Pastikan elemen diatur secara horizontal */
-        flex-wrap: wrap; /* Memastikan elemen membungkus jika ruang tidak cukup */
     }
 
     #countdown span {
-        width: 60px; /* Menyesuaikan lebar span untuk layar yang lebih kecil */
+        width: 50px; /* Menyesuaikan lebar span untuk layar yang lebih kecil */
         padding: 10px 0; /* Menyesuaikan padding untuk layar yang lebih kecil */
     }
 }
