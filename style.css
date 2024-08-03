@@ -6,14 +6,13 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-
+    padding: 0; /* Pastikan tidak ada padding tambahan */
 
     background-image: url('Gambar5.jpg');
-
-    background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
-    background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
-
-    
+    background-size: cover; /* Memastikan gambar mencakup seluruh halaman */
+    background-repeat: no-repeat; /* Gambar tidak akan diulang */
+    background-position: center; /* Menempatkan gambar di tengah halaman */
+    background-attachment: fixed; /* Memastikan gambar tetap di tempat saat menggulir */
 }
 
 .countdown-container {
