@@ -9,58 +9,19 @@ body {
     background-image: url('Gambar5.jpg');
     background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
     background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
-    background-position: center; /* Untuk memastikan gambar latar berada di tengah */
-    background-attachment: fixed; /* Agar gambar tetap di tempat saat di-scroll */
 }
-
 .countdown-container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7); /* Menggunakan rgba untuk transparansi */
-    padding: 20px; /* Meningkatkan padding untuk spasi yang lebih baik */
+    background-color: #FFFFFF7F;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan untuk kedalaman yang lebih baik */
-    max-width: 80%; /* Membatasi lebar maksimum untuk layar besar */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 #countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat dalam satu baris */
-    font-size: 2.5em;
-    font-weight: bold; /* Membuat teks lebih tebal untuk tampilan yang lebih baik */
+    font-size: 2em;
     margin-top: 20px;
 }
-
 #countdown span {
     display: inline-block;
-    width: 70px;
-    padding: 15px 0; /* Menambahkan padding untuk tampilan yang lebih baik */
-    border-radius: 5px; /* Sudut melengkung untuk elemen span */
-    background-color: #fff; /* Warna latar belakang untuk keterbacaan yang lebih baik */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk elemen span */
-    margin: 5px; /* Menambahkan margin antar elemen span */
-}
-
-/* Media Query untuk Mobile Devices */
-@media (max-width: 768px) {
-    body {
-        background-size: auto 100vh; /* Menyesuaikan ukuran gambar latar belakang untuk layar mobile */
-    }
-
-    .countdown-container {
-        padding: 15px; /* Menyesuaikan padding untuk layar yang lebih kecil */
-    }
-
-    #countdown {
-        font-size: 1.5em; /* Mengurangi ukuran font untuk layar yang lebih kecil */
-    }
-
-    #countdown span {
-        width: 50px; /* Menyesuaikan lebar span untuk layar yang lebih kecil */
-        padding: 10px 0; /* Menyesuaikan padding untuk layar yang lebih kecil */
-    }
+    width: 60px;
 }
