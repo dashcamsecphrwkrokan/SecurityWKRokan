@@ -1,3 +1,6 @@
+
+css
+Copied!
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,19 +12,56 @@ body {
     background-image: url('Gambar5.jpg');
     background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh halaman */
     background-repeat: no-repeat; /* Agar gambar latar belakang tidak diulang */
+    background-position: center; /* Memastikan gambar latar berada di tengah */
 }
+
 .countdown-container {
     text-align: center;
-    background-color: #FFFFFF7F;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Menggunakan rgba untuk transparansi */
+    padding: 20px; /* Meningkatkan padding untuk spasi yang lebih baik */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan untuk kedalaman yang lebih baik */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen di dalamnya secara vertikal */
+    align-items: center; /* Memusatkan elemen secara horizontal */
 }
+
 #countdown {
-    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Menambahkan jarak antar elemen */
+    font-size: 2.5em;
     margin-top: 20px;
 }
+
 #countdown span {
     display: inline-block;
-    width: 60px;
+    width: 80px; /* Meningkatkan lebar span */
+    padding: 15px 0; /* Menambahkan padding untuk tampilan yang lebih baik */
+    border-radius: 5px; /* Sudut melengkung untuk elemen span */
+    background-color: #fff; /* Warna latar belakang untuk keterbacaan yang lebih baik */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk elemen span */
+    text-align: center; /* Memastikan teks berada di tengah */
+}
+
+/* Media Query untuk Mobile Devices */
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 1.8em; /* Mengurangi ukuran font untuk layar yang lebih kecil */
+        gap: 5px; /* Mengurangi jarak antar elemen untuk layar yang lebih kecil */
+    }
+
+    #countdown span {
+        width: 60px; /* Menyesuaikan lebar span untuk layar yang lebih kecil */
+        padding: 10px 0; /* Menyesuaikan padding untuk layar yang lebih kecil */
+    }
+}
+
+/* Menambahkan gaya untuk teks "Rinjani Adventure" */
+.rinjani-adventure {
+    font-size: 3em; /* Menyesuaikan ukuran font sesuai kebutuhan */
+    font-weight: bold; /* Menambahkan ketebalan font */
+    color: #333; /* Mengatur warna teks */
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk memberi ruang antara teks dan countdown */
 }
